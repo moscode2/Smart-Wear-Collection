@@ -8,6 +8,10 @@ import Account from "./pages/Account";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
+import Shipping from "./pages/Shipping";
+import Returns from "./pages/Returns";
+import SizeGuide from "./pages/SizeGuide";
+import TrackOrder from "./pages/TrackOrder";
 import Dashboard from "./pages/admin/Dashboard";
 import Products from "./pages/admin/Products";
 import Orders from "./pages/admin/Orders";
@@ -27,7 +31,11 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<FAQ />} />
-        
+        <Route path="/shipping" element={<Shipping />} />
+        <Route path="/returns" element={<Returns />} />
+        <Route path="/size-guide" element={<SizeGuide />} />
+        <Route path="/track-order" element={<TrackOrder />} />
+
         {/* Admin routes */}
         <Route path="/admin" element={<Dashboard />} />
         <Route path="/admin/products" element={<Products />} />

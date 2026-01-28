@@ -62,24 +62,24 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Customer Service</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="hover:text-purple-400 transition">
+                <Link to="/shipping" className="hover:text-purple-400 transition">
                   Shipping Information
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-purple-400 transition">
+                <Link to="/returns" className="hover:text-purple-400 transition">
                   Returns & Exchanges
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-purple-400 transition">
+                <Link to="/size-guide" className="hover:text-purple-400 transition">
                   Size Guide
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-purple-400 transition">
+                <Link to="/track-order" className="hover:text-purple-400 transition">
                   Track Order
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
