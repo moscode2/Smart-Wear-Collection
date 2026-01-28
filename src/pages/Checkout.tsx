@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { ShoppingCart, CheckCircle } from "lucide-react";
 import Layout from "../components/Layout";
+import { formatKSH } from "../lib/currency";
 
 export default function Checkout() {
   const [currentStep, setCurrentStep] = useState(1);
@@ -56,7 +57,7 @@ export default function Checkout() {
                 Thank you for your purchase. Your order #ORD-2024001 has been confirmed and will be shipped soon.
               </p>
               <div className="bg-gray-50 rounded-lg p-4 mb-6 text-left">
-                <p className="text-sm text-gray-600"><strong>Order Total:</strong> ${total.toFixed(2)}</p>
+                <p className="text-sm text-gray-600"><strong>Order Total:</strong> {formatKSH(total)}</p>
                 <p className="text-sm text-gray-600 mt-2"><strong>Shipping to:</strong> {formData.address}, {formData.city}</p>
                 <p className="text-sm text-gray-600 mt-2">
                   <strong>Confirmation sent to:</strong> {formData.email}
@@ -236,7 +237,7 @@ export default function Checkout() {
                     <div className="flex-1">
                       <p className="text-sm font-medium text-gray-900">{item.name}</p>
                       <p className="text-sm text-gray-600">Qty: {item.quantity}</p>
-                      <p className="font-semibold text-gray-900">${(item.price * item.quantity).toFixed(2)}</p>
+                      <p className="font-semibold text-gray-900">{formatKSH(item.price * item.quantity)}</p>
                     </div>
                   </div>
                 ))}
@@ -245,19 +246,19 @@ export default function Checkout() {
               <div className="border-t border-gray-200 pt-6 space-y-3">
                 <div className="flex justify-between text-gray-600">
                   <span>Subtotal</span>
-                  <span>${subtotal.toFixed(2)}</span>
+                  <span>{formatKSH(subtotal)}</span>
                 </div>
                 <div className="flex justify-between text-gray-600">
                   <span>Shipping</span>
-                  <span>${shipping.toFixed(2)}</span>
+                  <span>{formatKSH(shipping)}</span>
                 </div>
                 <div className="flex justify-between text-gray-600">
                   <span>Tax</span>
-                  <span>${tax.toFixed(2)}</span>
+                  <span>{formatKSH(tax)}</span>
                 </div>
                 <div className="border-t border-gray-200 pt-3 flex justify-between font-bold text-lg text-gray-900">
                   <span>Total</span>
-                  <span>${total.toFixed(2)}</span>
+                  <span>{formatKSH(total)}</span>
                 </div>
               </div>
             </motion.div>

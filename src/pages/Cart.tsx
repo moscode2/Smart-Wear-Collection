@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ShoppingBag, ArrowRight } from "lucide-react";
 import Layout from "../components/Layout";
 import CartItem from "../components/CartItem";
+import { formatKSH } from "../lib/currency";
 
 export default function Cart() {
   // Mock cart data - in a real app, this would come from state management
@@ -114,26 +115,26 @@ export default function Cart() {
                 <div className="space-y-3 mb-6">
                   <div className="flex justify-between text-gray-600">
                     <span>Subtotal</span>
-                    <span>${subtotal.toFixed(2)}</span>
+                    <span>{formatKSH(subtotal)}</span>
                   </div>
                   <div className="flex justify-between text-gray-600">
                     <span>Shipping</span>
-                    <span>{shipping === 0 ? "FREE" : `$${shipping.toFixed(2)}`}</span>
+                    <span>{shipping === 0 ? "FREE" : formatKSH(shipping)}</span>
                   </div>
                   <div className="flex justify-between text-gray-600">
                     <span>Tax</span>
-                    <span>${tax.toFixed(2)}</span>
+                    <span>{formatKSH(tax)}</span>
                   </div>
                   <div className="border-t pt-3 flex justify-between text-lg font-bold text-gray-900">
                     <span>Total</span>
-                    <span>${total.toFixed(2)}</span>
+                    <span>{formatKSH(total)}</span>
                   </div>
                 </div>
 
                 {subtotal < 100 && (
                   <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
                     <p className="text-sm text-blue-800">
-                      Add <span className="font-semibold">${(100 - subtotal).toFixed(2)}</span> more to get free shipping!
+                      Add <span className="font-semibold">{formatKSH(100 - subtotal)}</span> more to get free shipping!
                     </p>
                   </div>
                 )}

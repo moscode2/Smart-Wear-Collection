@@ -1,4 +1,5 @@
 import { Trash2 } from "lucide-react";
+import { formatKSH } from "../lib/currency";
 
 interface CartItemProps {
   id: string;
@@ -59,7 +60,7 @@ export default function CartItem({
           <Trash2 className="h-5 w-5" />
         </button>
         <p className="text-lg font-bold text-gray-900">
-          ${(price * quantity).toFixed(2)}
+          {formatKSH(price * quantity)}
         </p>
       </div>
     </div>

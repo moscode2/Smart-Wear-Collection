@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Heart, ShoppingCart, Star } from "lucide-react";
 import { Product } from "../data/products";
 import { motion } from "framer-motion";
+import { formatKSH } from "../lib/currency";
 
 interface ProductCardProps {
   product: Product;
@@ -80,11 +81,11 @@ export default function ProductCard({ product }: ProductCardProps) {
           {/* Price */}
           <div className="flex items-center gap-2">
             <span className="text-lg font-bold text-gray-900">
-              ${product.price.toFixed(2)}
+              {formatKSH(product.price)}
             </span>
             {product.originalPrice && (
               <span className="text-sm text-gray-500 line-through">
-                ${product.originalPrice.toFixed(2)}
+                {formatKSH(product.originalPrice)}
               </span>
             )}
           </div>

@@ -5,6 +5,7 @@ import { Star, Heart, ShoppingCart, Truck, Shield, RefreshCw, ChevronLeft } from
 import Layout from "../components/Layout";
 import ProductCard from "../components/ProductCard";
 import { products } from "../data/products";
+import { formatKSH } from "../lib/currency";
 
 export default function ProductDetail() {
   const { id } = useParams();
@@ -119,12 +120,12 @@ export default function ProductDetail() {
                 {/* Price */}
                 <div className="flex items-center gap-3 mb-6">
                   <span className="text-3xl font-bold text-gray-900">
-                    ${product.price.toFixed(2)}
+                    {formatKSH(product.price)}
                   </span>
                   {product.originalPrice && (
                     <>
                       <span className="text-xl text-gray-500 line-through">
-                        ${product.originalPrice.toFixed(2)}
+                        {formatKSH(product.originalPrice)}
                       </span>
                       <span className="px-3 py-1 bg-red-100 text-red-600 text-sm font-semibold rounded-full">
                         Save {discount}%

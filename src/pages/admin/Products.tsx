@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Plus, Edit, Trash2, Search, Loader } from "lucide-react";
 import Layout from "../../components/Layout";
 import { supabase } from "../../lib/supabase";
+import { formatKSH } from "../../lib/currency";
 
 interface Product {
   id: string;
@@ -207,7 +208,7 @@ export default function Products() {
                         </div>
                       </td>
                       <td className="py-4 px-6 text-gray-600">{product.gender}</td>
-                      <td className="py-4 px-6 font-semibold text-gray-900">${product.price.toFixed(2)}</td>
+                      <td className="py-4 px-6 font-semibold text-gray-900">{formatKSH(product.price)}</td>
                       <td className="py-4 px-6">
                         <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
                           product.stock > 20 ? "bg-green-100 text-green-800" :
