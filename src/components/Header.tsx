@@ -10,7 +10,7 @@ export default function Header() {
     <header className="bg-white shadow-sm sticky top-0 z-50">
       {/* Top banner */}
       <div className="bg-black text-white text-center py-2 text-sm">
-        <p>Free shipping on orders over $100 | Use code: SMART20 for 20% off</p>
+        <p>Free shipping on orders over Ksh 10,000</p>
       </div>
 
       {/* Main header */}

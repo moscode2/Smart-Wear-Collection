@@ -31,7 +31,7 @@ export default function About() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  Founded in 2020, Smart Wear Collection started with a simple mission: to make fashion accessible, affordable, and sustainable for everyone. We believe that style shouldn't come at the expense of your wallet or the planet.
+                  Founded in 2024, Smart Wear Collection started with a simple mission: to make fashion accessible, affordable, and sustainable for everyone. We believe that style shouldn't come at the expense of your wallet or the planet.
                 </p>
                 <p>
                   What began as a small online boutique has grown into a thriving fashion community, serving thousands of customers worldwide. Our curated collection features the latest trends for both men and women, carefully selected to ensure quality and style.
@@ -66,7 +66,7 @@ export default function About() {
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="h-8 w-8 text-blue-600" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">5000+</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">500+</h3>
               <p className="text-gray-600">Products Sold</p>
             </motion.div>
 

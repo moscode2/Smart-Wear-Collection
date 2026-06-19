@@ -20,8 +20,8 @@ export const products: Product[] = [
   {
     id: "1",
     name: "Classic Cotton T-Shirt",
-    price: 29.99,
-    originalPrice: 39.99,
+    price: 1500,
+    originalPrice: 1800,
     category: "T-Shirts",
     gender: "Mens",
     images: [
@@ -39,7 +39,7 @@ export const products: Product[] = [
   {
     id: "2",
     name: "Slim Fit Denim Jeans",
-    price: 79.99,
+    price: 1800,
     category: "Jeans",
     gender: "Mens",
     images: [
@@ -56,8 +56,8 @@ export const products: Product[] = [
   {
     id: "3",
     name: "Casual Button-Down Shirt",
-    price: 49.99,
-    originalPrice: 69.99,
+    price: 1600,
+    originalPrice: 1750,
     category: "Shirts",
     gender: "Mens",
     images: [
@@ -74,7 +74,7 @@ export const products: Product[] = [
   {
     id: "4",
     name: "Hooded Sweatshirt",
-    price: 59.99,
+    price: 1200,
     category: "Hoodies",
     gender: "Unisex",
     images: [
@@ -91,8 +91,8 @@ export const products: Product[] = [
   {
     id: "5",
     name: "Leather Jacket",
-    price: 199.99,
-    originalPrice: 249.99,
+    price: 2500,
+    originalPrice: 2800,
     category: "Jackets",
     gender: "Mens",
     images: [
@@ -109,7 +109,7 @@ export const products: Product[] = [
   {
     id: "6",
     name: "Chino Pants",
-    price: 64.99,
+    price: 640,
     category: "Pants",
     gender: "Mens",
     images: [
@@ -126,7 +126,7 @@ export const products: Product[] = [
   {
     id: "7",
     name: "Polo Shirt",
-    price: 39.99,
+    price: 1800,
     category: "Shirts",
     gender: "Mens",
     images: [
@@ -143,7 +143,7 @@ export const products: Product[] = [
   {
     id: "8",
     name: "Bomber Jacket",
-    price: 129.99,
+    price: 1750,
     category: "Jackets",
     gender: "Mens",
     images: [
@@ -159,8 +159,8 @@ export const products: Product[] = [
   {
     id: "9",
     name: "Women's Floral Dress",
-    price: 89.99,
-    originalPrice: 129.99,
+    price: 1000,
+    originalPrice: 1200,
     category: "Dresses",
     gender: "Womens",
     images: [
@@ -178,7 +178,7 @@ export const products: Product[] = [
   {
     id: "10",
     name: "Women's Skinny Jeans",
-    price: 69.99,
+    price: 800,
     category: "Jeans",
     gender: "Womens",
     images: [
@@ -195,8 +195,8 @@ export const products: Product[] = [
   {
     id: "11",
     name: "Women's Blouse",
-    price: 54.99,
-    originalPrice: 74.99,
+    price: 1500,
+    originalPrice: 1850,
     category: "Shirts",
     gender: "Womens",
     images: [
@@ -213,7 +213,7 @@ export const products: Product[] = [
   {
     id: "12",
     name: "Women's Sports Leggings",
-    price: 44.99,
+    price: 450,
     category: "Leggings",
     gender: "Womens",
     images: [
@@ -230,7 +230,7 @@ export const products: Product[] = [
   {
     id: "13",
     name: "Women's Leather Jacket",
-    price: 179.99,
+    price: 1700,
     category: "Jackets",
     gender: "Womens",
     images: [
@@ -247,7 +247,7 @@ export const products: Product[] = [
   {
     id: "14",
     name: "Women's Cardigan",
-    price: 64.99,
+    price: 640,
     category: "Cardigans",
     gender: "Womens",
     images: [
@@ -263,7 +263,7 @@ export const products: Product[] = [
   {
     id: "15",
     name: "Kids T-Shirt",
-    price: 19.99,
+    price: 1200,
     category: "T-Shirts",
     gender: "Kids",
     images: [
@@ -280,7 +280,7 @@ export const products: Product[] = [
   {
     id: "16",
     name: "Kids Hoodie",
-    price: 39.99,
+    price: 1400,
     category: "Hoodies",
     gender: "Kids",
     images: [
